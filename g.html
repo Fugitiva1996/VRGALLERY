@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=UTF-8>
+    <meta name="viewport" contenet="width=device-width, initial-scale=1.0"> 
+    <title> Gallery Virtual CCUAMEX </title>
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+    <!-- paqueteria para girfs-->
+
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+
+    <script src="https://unpkg.com/super-hands@2.0.2/dist/super-hands.min.js"></script>
+    <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
+
+
+
+
+</head>
+  <body>
+    <a-scene  physics="gravity:0">
+
+      <a-entity id="ring" movement-controls kinematic-body>
+      <a-entity id="camera" camera position="0 3 0" look-controls></a-entity> 
+      </a-entity> 
+        
+            <a-assets>
+
+              <img id = "PELAYO" src = "./1/RG26.jpg" >
+
+              <img id="#CIELO" src="./1/CIELO.jpg">
+
+              <img id="piso" src="./1/gris.jpg">
+
+              <img id="LABS1" src="./1/LABS1.png">
+              <img id="LABS2" src="./1/LABS2.png">
+
+              <img id="LABS3" src="./1/LABS3.png">
+              <img id="LABS4" src="./1/LABS4.png">
+
+              <img id="LALO3" src="./1/LALO1.png">
+              <img id="LALO4" src="./1/LALO2.png">
+
+              <img id="LALO1" src="./1/LALO3.png">
+              <img id="LALO2" src="./1/LALO4.png">
+
+              <img id="PEZ1" src="./1/LABS5.png">
+              <img id="PEZ2" src="./1/LABS6.png">
+
+              <!-- BITACORA ENCAPSULADA -->
+
+              <img id="P1" src="./1/P1.png">
+              <img id="P2" src="./1/P2.png">
+              <img id="P3" src="./1/P3.png">
+              <img id="P4" src="./1/P4.png">
+
+              <img id="CARO" src="./1/Caro.jpg">
+
+              <img id="TIRA" src="./1/TIRA.png">
+
+              <img id="RG4" src="./1/RG4.jpg">
+              <img id="RG20" src="./1/RG20.jpg">
+              <img id="RG26" src="./1/RG26.jpg">
+              <img id="RG10" src="./1/RG10.jpg">
+              <img id="ORI" src="./1/ORI.png">
+              <img id="oin" src="./1/kaky.png">
+
+
+              <img id="RG14" src="./1/RG14.jpg">
+
+
+              <video id="B1" autoplay loop="true" src="./1/Bitacora1.mov"></video>
+
+              <video id="Alicia" autoplay loop="true" src="./1/Alicia.mp4"></video>
+
+              <video id="BA" autoplay loop="true" src="./1/BitacoraA.mp4"></video>
+              <video id="BL" autoplay loop="true" src="./1/BitacoraL.mov"></video>
+              <video id="BM" autoplay loop="true" src="./1/BitacoraM.mov"></video>
+              <video id="BO" autoplay loop="true" src="./1/BitacoraO.mov"></video>
+              <video id="BU" autoplay loop="true" src="./1/BitacoraU.mov"></video>
+            
+
+              <video id="GUAMY" autoplay loop="true" src="./1/GUAMY.mov"></video>
+
+
+              <img id="TP" src="./1/TEXTURAPARED.jpg">
+
+              <img id="ROLLO11" src="./1/ROLLO11.png">
+              <img id="ROLLO22" src="./1/ROLLO22.png">
+
+              <img id="CURATORIAL" src="./1/libro.png">
+
+      <a-ssets-item id="escaleras" src="./1/escaleras.gltf" ></a-ssets-item>
+
+      <img id="CO1" src="./1/Cortina1.png">
+      <img id="CO2" src="./1/Cortina2.png">
+      <img id="uaemex" src="./1/UAEMex.jpg">
+
+
+
+<!-- BITACORA ENCAPSULADA -->
+
+
+
+
+
+            </a-assets>
+
+            <a-sky color ="#86C6EB"></a-sky>
+
+                       
+        
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"
+             event-set__enter="_event: mouseenter; color: #00ff00; scale: 2 2 2"
+             event-set__leave="_event: mouseleave; color: #4CC3D9; scale : 1 1 1"></a-box>
+ 
+      <!-- <a-camera>
+        <a-cursor></a-cursor>
+      </a-camera>
+
+         LINK LIBRO DE PELAYO
+
+
+        < a-entity  link = "href: index.html; title: Mi página de inicio; imagen: #PELAYO"></a-entity > 
+
+
+      <!--  MAMPARA GRIS LIBRO MALETA  -->
+<a-box  static-body position="-29.716 1.838 -19.05" rotation="0 90 -90" scale="2.5 4.5 0.3" color="#9A9CA2"></a-box>
+
+<!-- TABURETE CARO -->
+
+        
+            <a-box position="-12.30 0.242 -18.42" rotation=" 0 0 -90 " scale="0.5 7 7 " color="#305EE8"></a-box>
+<!-- mamparas videosss -->
+            <a-box static-body position="19 1.9 -1.284" rotation="0 0 -90" scale="2.5 0.2 3.4" color="#DEE1E4" ></a-box>
+            <a-box static-body position="24 1.9 2.496" rotation="0 0 -90" scale="2.5 0.2 3.4" color="#DEE1E4"></a-box>
+            <a-box static-body position="21.15 1.83 7.143" rotation="0 0 -90" scale="2.5 0.2 3.4" color="#DEE1E4" ></a-box>
+            <a-box static-body position="19 1.607 12.083" rotation="0 0 -90" scale="2.5 0.2 3.4" color="#DEE1E4" ></a-box>
+            <a-box static-body position="22.779 1.891 16.215" rotation="0 0 -90" scale="2.5  0.2 3.4" color="#305EE8" ></a-box>
+            <a-box static-body position="19 1.828 20.605" rotation="0 0 -90" scale="2.5 0.2 3.4" color="#DEE1E4" ></a-box>
+
+<!-- PARES NEGRAS NIGGAS-->
+<a-box static-body color="#white" position="-22.62 5.182 10.18" rotation="0 -90 -90" scale="10 14 0.5" ></a-box>
+<a-box static-body color="#1A1818" position="-2.524 5.044 21.398" rotation="0 -90 -90" scale="10 16 0.5" ></a-box>
+<a-box static-body color="#1A1818" position="-14.63 4.98 29.137" rotation="0 0 -90" scale="10 33 0.5"  ></a-box>
+<a-box static-body color="#1A1818" position="-6.798 5.118 11.88" rotation="0 -31.2 -90" scale="10 20 0.5"></a-box>
+<a-box static-body color="#1A1818" position="-15.38 4.570 8.045 " rotation="0 0 -90" scale="10 15 0.5"></a-box>
+
+<a-box static-body position="-15.465 9.859 10.513" rotation="90 0 0" scale="15 6 0.5" color="#1A1818" static-body></a-box>
+<a-box static-body position="-12.393 9.859 20.5 " rotation="90 0 0" scale="21 18 0.5" color="#1A1818" static-body></a-box>
+
+              
+<!-- MAMPARAS LABS -->
+
+            <a-box static-body position="1.582 2.319 -10.46" rotation="0 90.12 -90" scale="4.5 3 0.3" color="#9A9CA2" ></a-box>
+            <a-box static-body position="-4.734 2.3 -10.54" rotation="0 -138 -90" scale="4.5 3 0.3" color="#9A9CA2"></a-box>
+            <a-box static-body position="-12.04 2.3 -7.883" rotation="0 0 -90" scale="4.5 3 0.3" color="#9A9CA2"></a-box>
+            <a-box static-body position="-20.69 2.3 -10.10" rotation="0 -57 -90" scale="4.5 3 0.3" color="#9A9CA2"></a-box>
+<!--CAJAS CAFES -->
+
+            <a-box static-body position="-19.22 2.396 3.162" rotation="0 90 -90" scale="5 0.3 5" color="#000000"></a-box>
+            <a-box static-body position="-16.54 1.841 -27.83" rotation="0 0 -90" scale="3 8 0.5" color="#576074"></a-box>
+<!--         CAJAS PARA ORIGAMI           -->
+            <a-box static-body position="1.177 3.694 -23.31" rotation="0 0 -90" scale="0.5 3 1" color="#8A8A8A" ></a-box>
+            <a-box static-body position="1.195 0 -23.31" rotation="0 0 -90" scale="1 3 1" color="#8A8A8A" ></a-box>
+<!--  TUNEL  -->
+
+
+            
+        <!--  PISO-->
+                <a-plane src="#piso" position="8.941 0.071 0.0" rotation=" -90 0 -90 " scale="60 80 2"></a-plane>
+<!-- PANEL EN W ¿QUE DEMONIOS ES ESTE DESORDEN ?-->
+                <a-plane src="#LABS1" position="-20.74 3.315 -9.883" rotation="0 -57 0" scale="2 1 8" ></a-plane>
+                <a-plane src="#LABS2" position="-20.69 1.896 -9.793" rotation="0 -57 0" scale="2 1 8" ></a-plane>
+               
+                <a-plane src="#LABS3" position="1.760 2.3 -10.58" rotation="0 91.158 0" scale="2 3.5 8" ></a-plane>
+                <a-plane src="#LABS4" position="-4.593 2.3 -10.448" rotation="0 42 0" scale="2 3.5 8" ></a-plane>
+                 
+                <a-plane src="#LALO3" position="-20.56 2.330 -10.28" rotation="0 123.35  0" scale="2 3.5 8" ></a-plane>
+                <a-plane src="#LALO4" position="-12.04 2.385 -8.093" rotation="0 180  0" scale="2 3.5 8" ></a-plane>
+                <a-plane src="#LALO2" position="1.429 2.354 -10.44 " rotation="0 -90  0" scale="2 3.5 8" ></a-plane>
+                <a-plane src="#LALO1" position="-4.956 2.3 -10.589"  rotation="0 -136 0" scale="2 3.5 8" ></a-plane>
+
+                <a-plane src="#PEZ1" position="-12.19 3.2 -7.723" rotation="0 0 0" scale="2 1.0 8" ></a-plane>
+                <a-plane src="#PEZ2" position="-12.19 1.661 -7.73" rotation="0 0 0" scale="2 1.0 8" ></a-plane>
+                 
+<!-- lIBRO ENCAPSULADO -->
+              <a-plane  static-bodysrc="#P2" position="6.526 2.0 -19.412" scale="2 4 8" ></a-plane>
+
+              <a-plane static-body src="#P4" position="6.532 2.0 -20.43" rotation="0 -177 0" scale="2 4 8" ></a-plane>
+
+              <a-plane static-body src="#P1" position="5.595 2.0 -19.892" rotation="0 -90 0" scale="1 4 8" ></a-plane>
+
+              <a-plane static-body src="#P3" position="7.523 2.01 -19.91" rotation="0 90 0" scale="1 4 8" ></a-plane>
+<!-- poster caro -->
+              <a-plane static-body src="#CARO" position="-12.26 0.5 -18.39" rotation="-90 0 -90" scale="7 7 5" ></a-plane>
+<!-- VIDEOS -->
+
+
+<a-video src="#B1" width="3" height="2" position="18.888 1.9 -1.3" rotation="0 -90 0" scale="1 1 1"></a-video>
+
+<a-video src="#BU" width="3" height="2" position="18.891 1.6 12" rotation="0 -90 0"></a-video>
+      
+<a-video src="#BO" width="3" height="2" position="-29.52 1.9 -19" rotation="0 -90 0"></a-video>
+            
+<a-video src="#BM" width="3" height="2" position="22.677 1.9 16.295" rotation="0 -90 0"></a-video>
+            
+<a-video src="#BA" width="3" height="2" position="-14.79 1.886 -27.5" rotation="0 0 0"></a-video>
+
+<a-video src="#BL" width="3" height="2" position="23.885 1.9 2.534"  rotation="0 -90 0"></a-video>
+
+<a-video src="#Alicia" width="3" height="2" position="21.047 1.9 7.128" rotation="0 -90 0"></a-video>
+<!--
+
+<a-video src="#" width="3" height="2" position="0.978 0 -23.311" rotation="0 0 -90"></a-video>
+
+-->
+<a-video src="#GUAMY" width="3" height="2" position="1.198 1.886 -23.3" rotation="0 0 90" scale="1 1 1"></a-video>
+
+
+<!-- Paredes de la Galeria -->
+
+<a-box static-body src="#TP" position="27.5 5.015 15.124" rotation="0 -90 -90" scale="10 30 0.3" ></a-box>
+
+<a-box static-body src="#TP" position="2.076 5.088 21.954" rotation="0 -90 -90" scale="10 16 0.5" ></a-box>
+
+<a-box static-body src="#TP" position="-14.28 4.881 29.075" rotation="0 0 -90" scale="10 33 0.3" ></a-box>
+
+<a-box static-body src="#TP" position="-29.97 4.87 0.207" rotation="0 -90 90" scale="10 60 0.3" ></a-box>
+
+<a-box static-body src="#TP" position="-6.113 5.089 8.556" rotation="0.458 -33.46 -90.12" scale="10 20 0.3" ></a-box>
+
+<a-box static-body src="#TP" position="-18.855 5.125 3.204" rotation="0 0 -90" scale="10 9 0.3" ></a-box>
+ 
+<a-box static-body src="#TP" position="-23.06 5.182 10.185" rotation="0 -90 -90" scale="10 14 0.5"></a-box>
+
+<a-box static-body src="#TP" position="-11.18 4.82 -27.935" rotation="0 0 -90" scale="10 40 0.3" ></a-box>
+
+<a-box static-body src="#TP" position="11.016 4.881 -20.37" rotation="0 -34.32 -90" scale="10 30 0.3" ></a-box>
+
+<a-box static-body src="#TP" position="29.755 4.729 -11.9" rotation="0 0 -90" scale="10 13 0.3" ></a-box>
+<a-box  static-body src="#TP" position="28.039 4.030 -6.604" rotation="0 90 -90" scale="10 13 0.3" opacity="0" ></a-box>
+
+<a-box static-body src="#TP" position="14.44 5.243 29.277" rotation="0 2.063 -90" scale="10 25 0.3" opacity="0"></a-box>
+
+
+
+<a-box static-body src="#TP" position="44.402 5.015 2.14" rotation="0 90 -90" scale="10 65 0.3" ></a-box>
+
+<a-box static-body src="#TP" position="29.935 4.729 0.348" rotation="0 0 -90" scale="10 5 0.3" ></a-box>
+
+
+
+<a-box static-body src="#TP" position="23.419 5.125 28.675" rotation="0 0 -90" scale="10 9 0.3" ></a-box>
+<a-box static-body src="#TP" position="6.363 5.125 28.675" rotation="0 0 -90" scale="10 9 0.3" ></a-box>
+
+
+
+
+<!--texto curatorial-->
+
+
+<a-box src="#CURATORIAL" position="28 3.998 -11.89" rotation="0 0 0" scale="7 6 0.3" ></a-box>
+            
+            <a-box position="-5.7 3.9 -29" rotation="0 0 -90" scale="7.9 20 0.3" color="#C9C9D4"></a-box>
+            
+<!--  insectos -->
+            <a-box src="#RG4" position="-18.57 1.744 -27.75" rotation="0 0 0" scale="2.6 2.212 0.5" ></a-box>
+
+<!-- CORTINA -->
+
+            <a-box src="#CO1" position="12.579 5.392 3.863" rotation="90 0 0" scale="1. 0.033 8" ></a-box>
+            <a-box src="#CO2" position="11.601 5.392 2.156" rotation="90 0 0" scale="1. 0.033 8" ></a-box>
+            <a-box src="#CO1" position="9.953 5.392 3.631" rotation="90 0 0" scale="1. 0.033 8 " ></a-box>
+            <a-box src="#CO2" position="9.093 5.392 2.348" rotation="90 0 0" scale="1. 0.033 8" ></a-box>
+            <a-box src="#CO1" position="7.726 5.392 3.376" rotation="90 0 0" scale="1. 0.033 8" ></a-box>
+            <a-box src="#CO2" position="5.322 5.345 3.958" rotation="90 0 0" scale="1. 0.033 8" ></a-box>
+            <a-box src="#CO1" position="6.343 5.395 1.873" rotation="90 0 0" scale="1. 0.033 8" ></a-box>
+            <a-box src="#CO2" position="5.286 5.392 -0.573" rotation="90 0 0" scale="1. 0.033 8" ></a-box>
+            <a-box src="#CO1" position="8.050 5.392 -0.573" rotation="90 0 0" scale="1. 0.033 8" ></a-box>
+            <a-box src="#CO2" position="6.716 5.395 -2.986" rotation="90 0 0" scale="1. 0.033 8" ></a-box>
+            <a-box src="#CO1" position="5.684 5.395 -5.331" rotation="90 0 0" scale="1. 0.033 8" ></a-box>
+            <a-box src="#CO2" position="8.268 5.392 -5.178" rotation="90 0 0" scale="1. 0.033 8" ></a-box>
+            <a-box src="#CO1" position="10.826 5.392 -5.044" rotation="90 0 0" scale="1. 0.033 8" ></a-box>
+            <a-box src="#CO2" position="11.601 5.392 -2.873" rotation="90 0 0" scale="1. 0.033 8" ></a-box>
+            <a-box src="#CO1" position="13.056 5.392 -4.922" rotation="90 0 0" scale="1. 0.033 8" ></a-box>
+            <a-box src="#CO2" position="13.056 5.392 -0.352" rotation="90 0 0" scale="1. 0.033 8" ></a-box>
+            <a-box src="#CO1" position="10.478 5.392 -0.4" rotation="90 0 0" scale="1. 0.033 8" ></a-box>
+            <a-box src="#CO2" position="9.454 5.392 -2.895" rotation="90 0 0" scale="1. 0.033 8" ></a-box>
+
+
+<!-- pelayo fuera -->
+            <a-box src="#RG26" position="-11.37 2.713 22.126" rotation="0 0 0" scale="5 5 5" ></a-box>
+<!-- triangulo -->
+            <a-box src="#RG14" position="-19.012 2.0 3.2" rotation="0 0 0" scale="3.5 4 0.5" ></a-box>
+<!--  cadenas -->
+            <a-box src="#RG20" position="-30.06 2.955 -4.631" rotation="0 0 0" scale="0.569 5 3" ></a-box>
+<!--  oyo-->
+            <a-box src="#oin" position="18.899 1.866 20.623" rotation="-90 -90 0" scale="3 0.033 2" ></a-box>
+<!--  libro murcielago -->
+            <a-box src="#RG10" position="2.081 2.576 19.937" rotation="90 0 -90" scale="4 0.5 3" ></a-box>
+
+<!-- origami  -->
+
+
+
+
+<!-- LIBRO ROLLO -->
+            <a-cylinder src="#ROLLO11"  position="-1.681 2 11.203" scale="1.2 0.17 1.2" rotation="89.611 -108.117 -72.021" ></a-cylinder>
+            <a-cylinder src="#ROLLO22"  position="-6.148 2 8.395" scale="1 0.17 1" rotation="90.12 -33.74 0" ></a-cylinder>
+
+
+
+            <a-entity gltf-model= "#escaleras"  position="0 0 0" rotation="0 0 0" scale="15 15 15" ></a-entity>
+
+        </a-scene>
+  </body>
+</html>
