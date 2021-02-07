@@ -10,8 +10,6 @@
 
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
-
     <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
@@ -20,9 +18,9 @@
 
 </head>
   <body>
-    <a-scene physics="gravity:0;">
+    <a-scene physics="gravity: 0">
 
-      <a-entity movement-controls kinematic-body>
+      <a-entity id="ring" movement-controls kinematic-body>
       <a-entity id="camera" camera position="0 3 0" look-controls></a-entity> 
       </a-entity> 
 
