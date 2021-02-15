@@ -7,13 +7,24 @@
     <title>LIBRO NEGRO</title>
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+    
+    <script src="./js/components/aframe-tooltip-component.js"></script>
+    <script src="js/components/camera-position.js"></script>
+    <script src="js/components/link-controls.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
 
 </head>
 <body>
 
      
 
-    <a-scene>
+    <a-scene
+            fog="color: #241417; near: 0; far: 30;"
+      raycaster="far: 100; objects: [link];"
+      cursor="rayOrigin: mouse"
+      camera-position 
+      info-message="htmlSrc: #messageText" 
+            >
         
  
         <a-assets>
