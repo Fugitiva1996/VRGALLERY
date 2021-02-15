@@ -24,14 +24,17 @@
 </head>
   <body>
     <a-scene
-             
+             raycaster="far: 100; objects: [link];"
+      cursor="rayOrigin: mouse"
+      camera-position
+      environment
              physics="gravity:0">
       
       
-      <a-entity movement-controls kinematic-body>
+     <!-- <a-entity movement-controls kinematic-body>
       <a-entity id="camera" camera position="0 3 0" look-controls>
       </a-entity>
-      </a-entity> 
+      </a-entity> -->
       
 
             <a-assets>
@@ -132,7 +135,7 @@
 <!-- TABURETE CARO -->
 
 
-            <a-box position="-12.30 0.242 -18.42" rotation=" 0 0 -90 " scale="0.5 7 7 " color="#305EE8" static-body></a-box>
+            <a-box position="-12.30 0.242 -18.42" rotation=" 0 0 -90 " scale="0.5 7 7 " color="#305EE8"></a-box>
 <!-- mamparas videosss -->
             <a-box position="19 1.9 -1.284" rotation="0 0 -90" scale="2.5 0.2 3.4" color="#DEE1E4" static-body ></a-box>
             <a-box position="24 1.9 2.496" rotation="0 0 -90" scale="2.5 0.2 3.4" color="#DEE1E4" static-body></a-box>
@@ -310,7 +313,7 @@
 
 
     
-      <a-link position="11.37 2.713 22.12" rotation="0 0 0" scale="5 5 5" href="LN.html" image="#Intento1"></a-link>
+      <a-link position="11.37 2.713 22.12" rotation="0 0 0" scale="5 5 5" href="LN.html" image="#Intento1" on="click"></a-link>
 
         </a-scene>
   </body>
